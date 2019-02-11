@@ -1,6 +1,7 @@
 apply plugin: 'com.android.library'
 
-def dbflow_version = "5.0.0-alpha1"
+
+
 
 android {
     compileSdkVersion 28
@@ -26,13 +27,5 @@ dependencies {
     androidTestImplementation 'androidx.test:runner:1.1.2-alpha01'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.2-alpha01'
 
-    //DBFLOW
-    // Annotation Processor
-    // if only using Java, use this. If using Kotlin do NOT use this.
-    annotationProcessor "com.github.agrosner.dbflow:processor:${dbflow_version}"
-    // core set of libraries
-    implementation "com.github.agrosner.dbflow:core:${dbflow_version}"
-    implementation "com.github.agrosner.dbflow:lib:${dbflow_version}"
-    // adds generated content provider annotations + support.
-    implementation "com.github.agrosner.dbflow:contentprovider:${dbflow_version}"
+
 }
